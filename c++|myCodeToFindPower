@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+void power(int base, int index){
+    int i, value = 1;
+    for(i = 1; i <= index; i++){
+        value *= base;
+    }
+cout <<"base "<< base<<" to the power "<<index<<" = " <<value;
+}
+
+int main() {
+  power(7,3);
+ 
+ 
+    return 0;
+}
+
+output/-
+base 7 to the power 3 = 343
