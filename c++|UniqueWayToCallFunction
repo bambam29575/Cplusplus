@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int power(){
+    int i, value = 1, base, index;
+    cin >> base >> index;
+    
+    for(i = 1; i <= index; i++){
+        value *= base;
+    }
+return value;
+}
+
+int main() {
+  
+ cout << "Answer : "<< power();
+ 
+    return 0;
+}
+
+output/-
+Answer : 6 2
+36
