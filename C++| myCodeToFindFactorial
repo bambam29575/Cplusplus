@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float num, r, i, numFact=1,rFact=1,numrFact=1, nCr;
+    cin >> num >> r;
+    for(i = num; i >= 1; i--){
+        numFact *= i;
+    }
+    for(i = r; i >= 1; i--){
+        rFact *= i;
+    }
+    for(i = (num - r); i >= 1; i--){
+        numrFact *= i;
+    }
+    nCr = numFact / (rFact*numrFact);
+    cout << nCr;
+
+    return 0;
+}
+
+output/-
+8
+2
+28
