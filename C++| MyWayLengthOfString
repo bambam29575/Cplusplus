@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+    char name[10];
+    cin >> name;
+    int length = 0;
+    
+    while(name[length] != '\0' ){
+         length++;
+    }
+    cout << "Length of the string " << length;
+    return 0;
+}
+
+output/-
+Length of the string 1
