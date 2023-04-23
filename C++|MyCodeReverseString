@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int lenString(char name[]){
+    int length = 0;
+    while(name[length] != '\0'){
+        length++;
+    }
+    cout << length << endl;
+    return length;
+}
+
+
+void reverseString(char name[]){
+    int len = lenString(name);
+    cout << len << endl;
+    int swap, noS;
+    noS = len / 2;
+    for(int n = 0, k = len - 1; n < noS; n++, k--){
+        swap = name[n];
+        name[n] = name[k];
+        name[k] = swap;
+    }
+    cout << "Name after reversed " << name;
+}
+
+int main (){
+    char name[10];
+    cin >> name;
+    reverseString(name);
+    return 0;
+}
+
+output/-
+[?2004l
+tiger
+5
+5
+Name after reversed regit[?2004h
