@@ -23,6 +23,16 @@ void reverseString(char name[]){
     cout << "Name after reversed " << name;
 }
 
+/* OR
+void reverseString(char name[]){
+    int len = lenString(name);
+    cout << len << endl;
+    int low = 0, high = len - 1;
+ ---------->   swap(name[low++],name[high--]); // function to swap
+    cout << "Name after reversed " << name;
+}
+*/
+
 int main (){
     char name[10];
     cin >> name;
