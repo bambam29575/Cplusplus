@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int arr1[4] = {1,2,3,4}, arr2[9] = {9,8,7,6,5,4,4}, arr3[8] = {0}; // Initialize arr3 with the length of arr1
+    int count = 0; // Initialize a counter to keep track of the number of matching elements
+    
+    for(int k = 0; k < 4; k++){
+        for(int i = 0; i < 9; i++){
+            if(arr1[k] == arr2[i]){
+                arr3[count] = arr1[k];
+                count++;
+               
+            } 
+        }
+    }
+    
+    for(int l = 0; l < count; l++){ // Iterate over arr3 up to the number of matching elements
+        cout << arr3[l] << " ";
+    }
+    
+    return 0;
+}
