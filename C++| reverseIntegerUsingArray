@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int num, arr[1233], i = 0, k;
+    cin >> num;
+    while(num != 0){
+        arr[i] = num%10;
+        num = num/10;
+        i++;
+    }
+    for(k = 0; k < i; k++){
+        cout << arr[k];
+    }
+    return 0;
+}
+ output/-
+ 123456
+ 654321
